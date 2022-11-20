@@ -79,15 +79,13 @@ class _MyAppState extends State<MyApp> {
               // itembuilder adalah bentuk widget yang akan ditampilkan, wajib menggunakan 2 parameter.
               itemBuilder: (context, index){
     
-                //padding digunakan untuk memberikan jarak bagian atas listtile agar tidak terlalu mepet
+                
                 //menggunakan edgeInsets.only untuk membuat jarak hanya pada bagian atas saja
                 return Padding(
                   padding: const EdgeInsets.only(
                     top: 20, 
                   ),
     
-                  //listtile adalah widget yang disediakan flutter berisi 3 properti yang kita pakai
-                  //properti: leading, title, dan subtitle. di dalam setiap properti kalian bebas melakukan customisasi
                   child: ListTile(
                     leading: Image.network(
                       //menampilkan data gamabr
